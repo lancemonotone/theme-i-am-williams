@@ -1,0 +1,85 @@
+#adminmenu .wp-submenu a[href='edit.php?post_type=post&filter=incomplete'],
+#adminmenu .wp-submenu a[href='edit.php?post_type=post&filter=inactive'],
+#adminmenu .wp-submenu a[href='edit.php?post_type=post&filter=inactive_incomplete'] {
+	background-color: #FF6666; 
+	color: #FFFFFF;
+	font-weight: bold;
+    border-bottom: 1px solid #32373c;
+}
+/*------------------------------------------------------------------------------
+ * ACF 
+ *------------------------------------------------------------------------------*/
+.acfi, .acf-field .acf-label p.acfi {
+    background-color: #ffffe0;
+    border-color: #e6db55;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+    margin: 5px 0 15px !important;
+    padding: 0.5em !important;
+}
+.tablewrap {
+    margin-top: 3em;
+    position: relative;
+}
+/* table.data */
+table.data { border:1px solid #ccc; }
+table.data th{
+    background:#446181;
+    color:white;
+    border:1px solid #446181;
+    font-weight:normal;
+    font-size:15px;
+    padding:8px 16px 8px 10px;
+}
+table.data th:hover {
+    background:#446181 !important;
+}
+table.data td { vertical-align:top; border-bottom:1px dotted #ccc; border-right:1px dotted #ccc; }
+table.data tr.total td, table.data td.total { border-color:#999; }
+table.data tr:last-child td { border-bottom:none; }
+table.data tr:last-child td:last-child { border-right:none; }
+table.data tr td:last-child { border-right:none; }
+table.data tr:nth-child(odd){ background:white; }
+table.data tr:nth-child(even), tr.alt-stripe { background:#eef8fd; }
+table.data tr:nth-child(even) table.data tr:nth-child(odd) { background:white; }
+table.nostripes td { background:white !important; }
+table.data tbody tr:hover > td { background:#fffbcc; }
+table.data tbody tr:hover td { background:#E5F4CD; }
+
+/* tablesorter */
+table.tablesorter thead tr th,
+table.tablesorter tfoot tr th {
+    position: relative
+}
+table.tablesorter thead tr .header {
+    cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp:after,
+table.tablesorter thead tr .headerSortDown:after {
+    display: block;
+    font-size: 10px;
+    height: 1em;
+    position: absolute;
+    width: 1em;
+    bottom: 50%;
+    right: 2px;
+}
+table.tablesorter thead tr .headerSortUp:after {
+    content: "\25B2";
+}
+table.tablesorter thead tr .headerSortDown:after {
+    content: "\25BC";
+}
+table.tablesorter thead tr .headerSortDown,
+table.tablesorter thead tr .headerSortUp {
+    background-color: #3586AA;
+}
+table.tablesorter #tablefilter {
+    line-height: 1.4em;
+    top: -25px;
+}
+table.tablesorter #tablefilter input.filter {
+    float: none;
+}
